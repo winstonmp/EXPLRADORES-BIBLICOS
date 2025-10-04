@@ -1,0 +1,89 @@
+/* Custom Tailwind Configuration */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Fredoka", sans-serif;
+}
+
+/* Navigation Links */
+.nav-link {
+  @apply flex items-center gap-2 px-4 py-2 rounded-xl font-semibold text-gray-700 hover:bg-yellow-100 transition-colors;
+}
+
+.mobile-nav-link {
+  @apply flex items-center gap-3 px-4 py-3 rounded-xl font-semibold text-gray-700 hover:bg-yellow-100 transition-colors w-full;
+}
+
+/* Feature Cards */
+.feature-card {
+  @apply bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-4 border-transparent hover:border-yellow-400;
+}
+
+/* Story Cards */
+.story-card {
+  @apply bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-4 border-transparent hover:border-blue-400;
+}
+
+/* Coloring Cards */
+.coloring-card {
+  @apply bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-4 border-transparent hover:border-green-400;
+}
+
+/* Video Cards */
+.video-card {
+  @apply bg-white/90 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-4 border-transparent hover:border-purple-400 cursor-pointer;
+}
+
+/* Filter Buttons */
+.filter-btn {
+  @apply px-6 py-3 rounded-2xl font-semibold text-gray-700 bg-white/80 hover:bg-purple-100 transition-colors shadow-lg;
+}
+
+.filter-btn.active {
+  @apply bg-gradient-to-r from-purple-500 to-pink-500 text-white;
+}
+
+/* Download Button */
+.download-btn {
+  @apply w-full flex items-center justify-center gap-3 bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition-transform shadow-xl;
+}
+
+/* Animations */
+@keyframes bounce-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 3s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+
+/* Video Badge */
+.video-badge {
+  @apply absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold text-gray-700 shadow-lg;
+}
+
+/* Age Badge */
+.age-badge {
+  @apply absolute top-4 left-4 bg-yellow-400 px-3 py-1 rounded-full text-sm font-bold text-gray-800 shadow-lg;
+}

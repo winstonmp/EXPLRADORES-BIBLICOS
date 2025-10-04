@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historias Bíblicas - Para Niños</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-fredoka bg-gradient-to-br from-sky-100 via-yellow-50 to-green-50 min-h-screen">
+  <!-- Navigation -->
+  <nav class="bg-white/90 backdrop-blur-sm shadow-lg sticky top-0 z-50 border-b-4 border-yellow-400">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-2xl flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-lg">
+            <span class="text-2xl">📖</span>
+          </div>
+          <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Historias Bíblicas
+          </span>
+        </a>
+        
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl bg-yellow-400 hover:bg-yellow-500 transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <div id="nav-menu" class="hidden md:flex items-center gap-2">
+          <a href="historias.html" class="nav-link bg-blue-100">
+            <span class="text-2xl">📚</span>
+            <span>Historias</span>
+          </a>
+          <a href="videos.html" class="nav-link">
+            <span class="text-2xl">🎬</span>
+            <span>Videos</span>
+          </a>
+          <a href="colorear.html" class="nav-link">
+            <span class="text-2xl">🎨</span>
+            <span>Colorear</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+        <a href="historias.html" class="mobile-nav-link bg-blue-100">
+          <span class="text-2xl">📚</span>
+          <span>Historias</span>
+        </a>
+        <a href="videos.html" class="mobile-nav-link">
+          <span class="text-2xl">🎬</span>
+          <span>Videos</span>
+        </a>
+        <a href="colorear.html" class="mobile-nav-link">
+          <span class="text-2xl">🎨</span>
+          <span>Colorear</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mx-auto px-4 py-12">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <div class="inline-block mb-6">
+        <div class="w-24 h-24 bg-gradient-to-br from-blue-400 to-purple-600 rounded-3xl flex items-center justify-center shadow-2xl animate-bounce-slow">
+          <span class="text-6xl">📚</span>
+        </div>
+      </div>
+      <h1 class="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        Historias Bíblicas
+      </h1>
+      <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+        Descubre las historias más emocionantes de la Biblia
+      </p>
+    </div>
+
+    <!-- Narrated Stories Banner -->
+    <div class="mb-12 bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 rounded-3xl p-8 shadow-2xl border-4 border-white max-w-4xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center gap-6 text-white">
+        <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center flex-shrink-0">
+          <span class="text-5xl">🎧</span>
+        </div>
+        <div class="flex-1 text-center md:text-left">
+          <h2 class="text-3xl font-bold mb-2">¡Escucha Historias Narradas!</h2>
+          <p class="text-lg text-white/90">
+            Disfruta de historias bíblicas contadas con voces emocionantes
+          </p>
+        </div>
+        <a href="https://g.co/gemini/share/81252a3c3345" target="_blank" rel="noopener noreferrer" class="bg-white text-purple-600 px-8 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition-transform shadow-xl hover:shadow-2xl">
+          Escuchar Ahora →
+        </a>
+      </div>
+    </div>
+
+    <!-- Stories Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <!-- Story 1: Noah's Ark -->
+      <div class="story-card group">
+        <div class="relative overflow-hidden rounded-2xl mb-4 aspect-video">
+          <img src="noah-s-ark-with-animals-colorful-children-illustra.jpg" alt="El Arca de Noé" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        </div>
+        <h3 class="text-2xl font-bold text-blue-600 mb-2">El Arca de Noé</h3>
+        <p class="text-gray-600 mb-4">
+          Descubre cómo Noé construyó un arca gigante para salvar a los animales del gran diluvio.
+        </p>
+        <a href="historia-noe.html" class="inline-flex items-center gap-2 text-blue-600 font-semibold hover:gap-4 transition-all">
+          <span>Leer historia</span>
+          <span>→</span>
+        </a>
+      </div>
+
+      <!-- Story 2: David and Goliath -->
+      <div class="story-card group">
+        <div class="relative overflow-hidden rounded-2xl mb-4 aspect-video">
+          <img src="david-and-goliath-children-bible-story-illustratio.jpg" alt="David y Goliat" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        </div>
+        <h3 class="text-2xl font-bold text-green-600 mb-2">David y Goliat</h3>
+        <p class="text-gray-600 mb-4">
+          La increíble historia de un niño valiente que venció a un gigante con su fe en Dios.
+        </p>
+        <a href="historia-david.html" class="inline-flex items-center gap-2 text-green-600 font-semibold hover:gap-4 transition-all">
+          <span>Leer historia</span>
+          <span>→</span>
+        </a>
+      </div>
+
+      <!-- Story 3: Jonah -->
+      <div class="story-card group">
+        <div class="relative overflow-hidden rounded-2xl mb-4 aspect-video">
+          <img src="jonah-and-the-whale-colorful-children-illustration.jpg" alt="Jonás y la Ballena" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        </div>
+        <h3 class="text-2xl font-bold text-purple-600 mb-2">Jonás y la Ballena</h3>
+        <p class="text-gray-600 mb-4">
+          La aventura de Jonás dentro de una ballena gigante y su importante misión.
+        </p>
+        <a href="historia-jonas.html" class="inline-flex items-center gap-2 text-purple-600 font-semibold hover:gap-4 transition-all">
+          <span>Leer historia</span>
+          <span>→</span>
+        </a>
+      </div>
+
+      <!-- Story 4: Daniel -->
+      <div class="story-card group">
+        <div class="relative overflow-hidden rounded-2xl mb-4 aspect-video">
+          <img src="daniel-in-the-lions-den-children-bible-illustratio.jpg" alt="Daniel en el Foso de los Leones" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        </div>
+        <h3 class="text-2xl font-bold text-orange-600 mb-2">Daniel y los Leones</h3>
+        <p class="text-gray-600 mb-4">
+          Cómo Daniel fue protegido por Dios en el foso de los leones hambrientos.
+        </p>
+        <a href="historia-daniel.html" class="inline-flex items-center gap-2 text-orange-600 font-semibold hover:gap-4 transition-all">
+          <span>Leer historia</span>
+          <span>→</span>
+        </a>
+      </div>
+
+      <!-- Story 5: Moses -->
+      <div class="story-card group">
+        <div class="relative overflow-hidden rounded-2xl mb-4 aspect-video">
+          <img src="moses-parting-the-red-sea-children-illustration.jpg" alt="Moisés y el Mar Rojo" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        </div>
+        <h3 class="text-2xl font-bold text-red-600 mb-2">Moisés y el Mar Rojo</h3>
+        <p class="text-gray-600 mb-4">
+          El milagro asombroso de cómo Dios abrió el mar para que su pueblo pasara.
+        </p>
+        <a href="historia-moises.html" class="inline-flex items-center gap-2 text-red-600 font-semibold hover:gap-4 transition-all">
+          <span>Leer historia</span>
+          <span>→</span>
+        </a>
+      </div>
+
+      <!-- Story 6: Nativity -->
+      <div class="story-card group">
+        <div class="relative overflow-hidden rounded-2xl mb-4 aspect-video">
+          <img src="nativity-scene-baby-jesus-children-illustration.jpg" alt="El Nacimiento de Jesús" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        </div>
+        <h3 class="text-2xl font-bold text-yellow-600 mb-2">El Nacimiento de Jesús</h3>
+        <p class="text-gray-600 mb-4">
+          La hermosa historia de cómo nació Jesús en un pesebre en Belén.
+        </p>
+        <a href="historia-jesus.html" class="inline-flex items-center gap-2 text-yellow-600 font-semibold hover:gap-4 transition-all">
+          <span>Leer historia</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-8 mt-20">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-lg font-semibold mb-2">Historias Bíblicas para Niños</p>
+      <p class="text-blue-100">Aprendiendo sobre Dios de manera divertida</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos - Historias Bíblicas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-fredoka bg-gradient-to-br from-sky-100 via-yellow-50 to-green-50 min-h-screen">
+  <!-- Navigation -->
+  <nav class="bg-white/90 backdrop-blur-sm shadow-lg sticky top-0 z-50 border-b-4 border-yellow-400">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-2xl flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-lg">
+            <span class="text-2xl">📖</span>
+          </div>
+          <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Historias Bíblicas
+          </span>
+        </a>
+        
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl bg-yellow-400 hover:bg-yellow-500 transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <div id="nav-menu" class="hidden md:flex items-center gap-2">
+          <a href="historias.html" class="nav-link">
+            <span class="text-2xl">📚</span>
+            <span>Historias</span>
+          </a>
+          <a href="videos.html" class="nav-link bg-purple-100">
+            <span class="text-2xl">🎬</span>
+            <span>Videos</span>
+          </a>
+          <a href="colorear.html" class="nav-link">
+            <span class="text-2xl">🎨</span>
+            <span>Colorear</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+        <a href="historias.html" class="mobile-nav-link">
+          <span class="text-2xl">📚</span>
+          <span>Historias</span>
+        </a>
+        <a href="videos.html" class="mobile-nav-link bg-purple-100">
+          <span class="text-2xl">🎬</span>
+          <span>Videos</span>
+        </a>
+        <a href="colorear.html" class="mobile-nav-link">
+          <span class="text-2xl">🎨</span>
+          <span>Colorear</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mx-auto px-4 py-12">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <div class="inline-block mb-6">
+        <div class="w-24 h-24 bg-gradient-to-br from-purple-400 to-pink-600 rounded-3xl flex items-center justify-center shadow-2xl animate-bounce-slow">
+          <span class="text-6xl">🎬</span>
+        </div>
+      </div>
+      <h1 class="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+        Videos Bíblicos
+      </h1>
+      <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+        Mira videos animados de tus historias favoritas
+      </p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="flex flex-wrap justify-center gap-3 mb-12">
+      <button class="filter-btn active" data-category="todos">Todos</button>
+      <button class="filter-btn" data-category="antiguo">Antiguo Testamento</button>
+      <button class="filter-btn" data-category="nuevo">Nuevo Testamento</button>
+      <button class="filter-btn" data-category="milagros">Milagros</button>
+    </div>
+
+    <!-- Videos Grid -->
+    <div id="videos-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <!-- Video cards will be populated by JavaScript -->
+    </div>
+  </main>
+
+  <!-- Video Modal -->
+  <div id="video-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-4xl w-full overflow-hidden shadow-2xl">
+      <div class="flex items-center justify-between p-6 border-b-4 border-purple-400">
+        <h3 id="modal-title" class="text-2xl font-bold text-gray-800"></h3>
+        <button id="close-modal" class="w-10 h-10 bg-red-500 hover:bg-red-600 text-white rounded-xl flex items-center justify-center transition-colors">
+          <span class="text-2xl">×</span>
+        </button>
+      </div>
+      <div class="aspect-video bg-gray-900">
+        <div id="video-container" class="w-full h-full flex items-center justify-center text-white">
+          <p class="text-xl">Aquí se mostraría el video</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-8 mt-20">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-lg font-semibold mb-2">Historias Bíblicas para Niños</p>
+      <p class="text-blue-100">Aprendiendo sobre Dios de manera divertida</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="videos.js"></script>
+</body>
+</html>

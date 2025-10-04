@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historias Bíblicas para Niños</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-fredoka bg-gradient-to-br from-sky-100 via-yellow-50 to-green-50 min-h-screen">
+  <!-- Navigation -->
+  <nav class="bg-white/90 backdrop-blur-sm shadow-lg sticky top-0 z-50 border-b-4 border-yellow-400">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-2xl flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-lg">
+            <span class="text-2xl">📖</span>
+          </div>
+          <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Historias Bíblicas
+          </span>
+        </a>
+        
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl bg-yellow-400 hover:bg-yellow-500 transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <div id="nav-menu" class="hidden md:flex items-center gap-2">
+          <a href="historias.html" class="nav-link">
+            <span class="text-2xl">📚</span>
+            <span>Historias</span>
+          </a>
+          <a href="videos.html" class="nav-link">
+            <span class="text-2xl">🎬</span>
+            <span>Videos</span>
+          </a>
+          <a href="colorear.html" class="nav-link">
+            <span class="text-2xl">🎨</span>
+            <span>Colorear</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+        <a href="historias.html" class="mobile-nav-link">
+          <span class="text-2xl">📚</span>
+          <span>Historias</span>
+        </a>
+        <a href="videos.html" class="mobile-nav-link">
+          <span class="text-2xl">🎬</span>
+          <span>Videos</span>
+        </a>
+        <a href="colorear.html" class="mobile-nav-link">
+          <span class="text-2xl">🎨</span>
+          <span>Colorear</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <main class="container mx-auto px-4 py-12">
+    <div class="text-center mb-16 animate-fade-in">
+      <div class="inline-block mb-6 animate-bounce-slow">
+        <div class="w-32 h-32 bg-gradient-to-br from-yellow-400 via-orange-400 to-red-400 rounded-full flex items-center justify-center shadow-2xl">
+          <span class="text-6xl">✨</span>
+        </div>
+      </div>
+      
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight">
+        ¡Bienvenidos a las<br />Historias Bíblicas!
+      </h1>
+      
+      <p class="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+        Descubre las maravillosas historias de la Biblia de una manera divertida y fácil de entender
+      </p>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Stories Card -->
+      <a href="historias.html" class="feature-card group">
+        <div class="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-xl">
+          <span class="text-5xl">📚</span>
+        </div>
+        <h2 class="text-3xl font-bold text-blue-600 mb-4">Historias Bíblicas</h2>
+        <p class="text-gray-600 text-lg leading-relaxed">
+          Lee historias increíbles del Arca de Noé, David y Goliat, y muchas más
+        </p>
+        <div class="mt-6 flex items-center gap-2 text-blue-600 font-semibold">
+          <span>Explorar historias</span>
+          <span class="group-hover:translate-x-2 transition-transform">→</span>
+        </div>
+      </a>
+
+      <!-- Videos Card -->
+      <a href="videos.html" class="feature-card group">
+        <div class="w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-xl">
+          <span class="text-5xl">🎬</span>
+        </div>
+        <h2 class="text-3xl font-bold text-purple-600 mb-4">Videos Divertidos</h2>
+        <p class="text-gray-600 text-lg leading-relaxed">
+          Mira videos animados de tus historias bíblicas favoritas
+        </p>
+        <div class="mt-6 flex items-center gap-2 text-purple-600 font-semibold">
+          <span>Ver videos</span>
+          <span class="group-hover:translate-x-2 transition-transform">→</span>
+        </div>
+      </a>
+
+      <!-- Coloring Card -->
+      <a href="colorear.html" class="feature-card group">
+        <div class="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-xl">
+          <span class="text-5xl">🎨</span>
+        </div>
+        <h2 class="text-3xl font-bold text-green-600 mb-4">Libros para Colorear</h2>
+        <p class="text-gray-600 text-lg leading-relaxed">
+          Descarga y colorea hermosas imágenes de historias bíblicas
+        </p>
+        <div class="mt-6 flex items-center gap-2 text-green-600 font-semibold">
+          <span>Descargar libros</span>
+          <span class="group-hover:translate-x-2 transition-transform">→</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Fun Facts Section -->
+    <div class="mt-20 bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border-4 border-yellow-400 max-w-4xl mx-auto">
+      <div class="text-center">
+        <div class="inline-block mb-6">
+          <div class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-2xl flex items-center justify-center shadow-lg">
+            <span class="text-4xl">💡</span>
+          </div>
+        </div>
+        <h3 class="text-3xl font-bold text-gray-800 mb-4">¿Sabías que...?</h3>
+        <p class="text-xl text-gray-700 leading-relaxed">
+          La Biblia contiene más de 100 historias maravillosas que nos enseñan sobre el amor, la valentía, la fe y la bondad. ¡Cada historia tiene una lección especial para ti!
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-8 mt-20">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-lg font-semibold mb-2">Historias Bíblicas para Niños</p>
+      <p class="text-blue-100">Aprendiendo sobre Dios de manera divertida</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

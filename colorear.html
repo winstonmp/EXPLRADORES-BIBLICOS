@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libros para Colorear - Historias Bíblicas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-fredoka bg-gradient-to-br from-sky-100 via-yellow-50 to-green-50 min-h-screen">
+  <!-- Navigation -->
+  <nav class="bg-white/90 backdrop-blur-sm shadow-lg sticky top-0 z-50 border-b-4 border-yellow-400">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-2xl flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-lg">
+            <span class="text-2xl">📖</span>
+          </div>
+          <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Historias Bíblicas
+          </span>
+        </a>
+        
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl bg-yellow-400 hover:bg-yellow-500 transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <div id="nav-menu" class="hidden md:flex items-center gap-2">
+          <a href="historias.html" class="nav-link">
+            <span class="text-2xl">📚</span>
+            <span>Historias</span>
+          </a>
+          <a href="videos.html" class="nav-link">
+            <span class="text-2xl">🎬</span>
+            <span>Videos</span>
+          </a>
+          <a href="colorear.html" class="nav-link bg-green-100">
+            <span class="text-2xl">🎨</span>
+            <span>Colorear</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+        <a href="historias.html" class="mobile-nav-link">
+          <span class="text-2xl">📚</span>
+          <span>Historias</span>
+        </a>
+        <a href="videos.html" class="mobile-nav-link">
+          <span class="text-2xl">🎬</span>
+          <span>Videos</span>
+        </a>
+        <a href="colorear.html" class="mobile-nav-link bg-green-100">
+          <span class="text-2xl">🎨</span>
+          <span>Colorear</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mx-auto px-4 py-12">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <div class="inline-block mb-6">
+        <div class="w-24 h-24 bg-gradient-to-br from-green-400 to-blue-600 rounded-3xl flex items-center justify-center shadow-2xl animate-bounce-slow">
+          <span class="text-6xl">🎨</span>
+        </div>
+      </div>
+      <h1 class="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+        Libros para Colorear
+      </h1>
+      <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+        Descarga e imprime hermosas páginas para colorear
+      </p>
+    </div>
+
+    <!-- Info Banner -->
+    <div class="mb-12 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-3xl p-6 shadow-xl border-4 border-white max-w-3xl mx-auto">
+      <div class="flex items-center gap-4 text-white">
+        <span class="text-4xl">💡</span>
+        <p class="text-lg font-semibold">
+          Haz clic en "Descargar PDF" para guardar e imprimir las páginas para colorear
+        </p>
+      </div>
+    </div>
+
+    <!-- Coloring Books Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <!-- Coloring Book 1 -->
+      <div class="coloring-card">
+        <div class="relative overflow-hidden rounded-2xl mb-4 aspect-[3/4] bg-white p-4">
+          <img src="noah-ark-coloring-page-preview.jpg" alt="El Arca de Noé para Colorear" class="w-full h-full object-contain">
+        </div>
+        <h3 class="text-2xl font-bold text-blue-600 mb-2">El Arca de Noé</h3>
+        <p class="text-gray-600 mb-4">8 páginas para colorear</p>
+        <button class="download-btn">
+          <span class="text-2xl">📥</span>
+          <span>Descargar PDF</span>
+        </button>
+      </div>
+
+      <!-- Coloring Book 2 -->
+      <div class="coloring-card">
+        <div class="relative overflow-hidden rounded-2xl mb-4 aspect-[3/4] bg-white p-4">
+          <img src="noah-ark-coloring-page-preview.jpg" alt="David y Goliat para Colorear" class="w-full h-full object-contain">
+        </div>
+        <h3 class="text-2xl font-bold text-green-600 mb-2">David y Goliat</h3>
+        <p class="text-gray-600 mb-4">6 páginas para colorear</p>
+        <button class="download-btn">
+          <span class="text-2xl">📥</span>
+          <span>Descargar PDF</span>
+        </button>
+      </div>
+
+      <!-- Coloring Book 3 -->
+      <div class="coloring-card">
+        <div class="relative overflow-hidden rounded-2xl mb-4 aspect-[3/4] bg-white p-4">
+          <img src="noah-ark-coloring-page-preview.jpg" alt="Jonás y la Ballena para Colorear" class="w-full h-full object-contain">
+        </div>
+        <h3 class="text-2xl font-bold text-purple-600 mb-2">Jonás y la Ballena</h3>
+        <p class="text-gray-600 mb-4">5 páginas para colorear</p>
+        <button class="download-btn">
+          <span class="text-2xl">📥</span>
+          <span>Descargar PDF</span>
+        </button>
+      </div>
+
+      <!-- Coloring Book 4 -->
+      <div class="coloring-card">
+        <div class="relative overflow-hidden rounded-2xl mb-4 aspect-[3/4] bg-white p-4">
+          <img src="noah-ark-coloring-page-preview.jpg" alt="Daniel y los Leones para Colorear" class="w-full h-full object-contain">
+        </div>
+        <h3 class="text-2xl font-bold text-orange-600 mb-2">Daniel y los Leones</h3>
+        <p class="text-gray-600 mb-4">7 páginas para colorear</p>
+        <button class="download-btn">
+          <span class="text-2xl">📥</span>
+          <span>Descargar PDF</span>
+        </button>
+      </div>
+
+      <!-- Coloring Book 5 -->
+      <div class="coloring-card">
+        <div class="relative overflow-hidden rounded-2xl mb-4 aspect-[3/4] bg-white p-4">
+          <img src="noah-ark-coloring-page-preview.jpg" alt="Moisés y el Mar Rojo para Colorear" class="w-full h-full object-contain">
+        </div>
+        <h3 class="text-2xl font-bold text-red-600 mb-2">Moisés y el Mar Rojo</h3>
+        <p class="text-gray-600 mb-4">6 páginas para colorear</p>
+        <button class="download-btn">
+          <span class="text-2xl">📥</span>
+          <span>Descargar PDF</span>
+        </button>
+      </div>
+
+      <!-- Coloring Book 6 -->
+      <div class="coloring-card">
+        <div class="relative overflow-hidden rounded-2xl mb-4 aspect-[3/4] bg-white p-4">
+          <img src="noah-ark-coloring-page-preview.jpg" alt="El Nacimiento de Jesús para Colorear" class="w-full h-full object-contain">
+        </div>
+        <h3 class="text-2xl font-bold text-yellow-600 mb-2">El Nacimiento de Jesús</h3>
+        <p class="text-gray-600 mb-4">10 páginas para colorear</p>
+        <button class="download-btn">
+          <span class="text-2xl">📥</span>
+          <span>Descargar PDF</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-8 mt-20">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-lg font-semibold mb-2">Historias Bíblicas para Niños</p>
+      <p class="text-blue-100">Aprendiendo sobre Dios de manera divertida</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
